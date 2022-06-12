@@ -4,7 +4,7 @@ An app to look up ingredients and recipies for cocktails.
 
 **Link to project:** https://brianandrewoneil.github.io/drinks/
 
-<img alt="image of web app" src="https://brianandrewoneil.github.io/trivia/img/drinks.PNG" width=50%>
+<img alt="image of web app" src="https://brianandrewoneil.github.io/drinks/img/drinks.PNG" width=50%>
 
 ## How It's Made
 
