@@ -13,7 +13,7 @@ An app to look up ingredients and recipies for cocktails.
 I built this app with an API integration that allows users to enter an ingredient (e.g., gin, whiskey) or the name of a cocktail in order to review a full ingredients list and directions to make that cocktail.
 
 ## Optimizations
-Future enhancements for this app include a better mobile interface and the ability for users to review and select from a variety of recipe options.
+Future enhancements for this app include a better mobile interface and the ability for users to review and select from a variety of recipe options. Also, allow users to enter a single spirit and choose among drink recipes.
 
 ## Lessons Learned
 Constructing html lists from JSON returned via the API call.
