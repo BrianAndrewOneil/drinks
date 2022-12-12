@@ -17,9 +17,9 @@
   right: auto;
 } 
 
-
-
-
+#searchArea a{
+  text-decoration: none;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/

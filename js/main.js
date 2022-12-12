@@ -75,14 +75,14 @@ function getDrink(searchType){
                     
                 drinkChoices += 
                     (`</div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#recipeOptionsCarousel" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <a class="carousel-control-prev" role="button" data-bs-target="#recipeOptionsCarousel" data-bs-slide="prev">
+                        <i class="fa-solid fa-square-caret-left fa-2xl"></i>
                             <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#recipeOptionsCarousel" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </a>
+                        <a class="carousel-control-next" role="button" data-bs-target="#recipeOptionsCarousel" data-bs-slide="next">
+                            <i class="fa-solid fa-square-caret-right fa-2xl"></i>
                             <span class="visually-hidden">Next</span>
-                        </button>
+                        </a>
                     </div>`)
                     
                 document.querySelector('#drinkChoices').innerHTML = drinkChoices

@@ -27,13 +27,13 @@
 			<div class="text-center mb-4">
 				<section class="mx-auto my-4">			
 					<header>
-						<img class="mb-1" src="img/UP.png" alt="kickass UP logo" width="120" height="120">
+						<a href=""><img class="mb-1" src="img/UP.png" alt="kickass UP logo" width="120" height="120"></a>
 						<h1>Uncle Peter Presents: Let's Have a Drink</h1>	
 					</header>
-					
+
 					<section id="searchArea" style="display: block">
 						<h2 class="text-muted">Search by cocktail name</h2>
-						<div><input type="text" name="" value="" id="inputTextName" placeholder="Enter cocktail name" size="35"></div>
+						<div><input type="text" name="" value="" id="inputTextName" autocomplete="off" placeholder="Enter cocktail name" size="35"></div>
 						<div class="my-3"><button type="button" name="button" class="btn btn-danger" id="inputNameButton">Search by cocktail name</button></div>
 						
 						<h2 class="text-muted">Or search by ingredient</h2>
@@ -41,7 +41,7 @@
 							<input  list="datalistOptions" id="inputTextIngredient" placeholder="Enter ingredient (whiskey, gin, red wine, etc.)" size="35">
 							<datalist id="datalistOptions">
 								<span id="datalistItems"></span>
-							  </datalist>
+							</datalist>
 						</div>
 						<div class="my-3"><button type="button" name="button" class="btn btn-danger" id="inputIngredientButton">Search by ingredient</button></div>
 							
@@ -54,15 +54,17 @@
 						</div>
 					</section>
 					
-					<section id="recipeArea">
+					<div class="row justify-content-md-center">
+					<section id="recipeArea"  class="col-md-7">
 						<h2 id="cocktailName"></h2>
 						<img id="cocktailPic" src="" alt="" class="img-fluid">
 						<h3 id="ingredientsHeading"></h3>
-						<ul><span id="ingredients"></span></ul>
+						<ul><span id="ingredients" class="list-unstyled"></span></ul>
 						<h3 id="directionsHeading"></h3>
 						<p id="directions"></p>
 						<div id="newSearch"></div> 
 					</section>
+					</div>
 				</section>
 			</div>
 		</main>
