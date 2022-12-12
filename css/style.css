@@ -10,52 +10,14 @@
 /******************************************
 /* LAYOUT
 /*******************************************/
-body {
-  background-color: #D0D0D0;
-  color:#2E4356;
-  font-family: 'Roboto', sans-serif;
-  background-image: url("https://images.unsplash.com/photo-1536599424071-0b215a388ba7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80");
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* background-size: auto; */
-  background-position: 100% 0;
-}
 
-header, footer, main{
-  padding: 10px;
-}
+.carousel-caption {
+  position: relative;
+  left: auto;
+  right: auto;
+} 
 
-main {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 5px;
 
-}
-h1{
-  font-family: 'Playfair Display', sans-serif;
-  font-size: 3rem;
-  padding-bottom:15px;
-  border-bottom: solid grey 2px;
-}
-
-button{
-  padding: 5px;
-}
-
-h2{
-  padding: 5px 0px;
-}
-
-img{
-  max-height: 200px;
-}
-
-footer {
-  padding-top: 20px;
-}
 
 
 /******************************************

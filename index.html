@@ -2,35 +2,74 @@
 <html lang="en">
 	<head>
     	<meta charset="utf-8">
-    	<meta name="description" content="This is where your description goes">
-    	<meta name="keywords" content="one, two, three">
-
-		<title>Let's Make a Cocktail</title>
+    	<meta name="description" content="It's 5 o'clock somewhere">
+    	<meta name="keywords" content="drinks, recipes, gin, whisky, whiskey">
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
+		
+		<title>UP Makes a Cocktail</title>
+		<link rel="icon" type="image/x-icon" sizes="32x32" href="img/favicon.ico"/>
 
 		<!-- external CSS link -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+			crossorigin="anonymous"
+		/>
 		<script src="https://kit.fontawesome.com/1b5e72048c.js" crossorigin="anonymous"></script>
 		<link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Playfair+Display:wght@600&family=Roboto:wght@500&family=Source+Sans+Pro:ital@1&display=swap" rel="stylesheet"> 
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
+	
 	<body>		
-		<header>
-		<h1>Let's Make a Cocktail!</h1>	
-		</header>
-		<main>			
-			<h2>What cocktail would you like to make?</h2>
-			<input type="text" name="" value="" placeholder="Enter any drink name here" size="40">
-			<button type="button" name="button">Get Instructions</button>
-			<h2 id="cocktailName"></h2>
-			<img src="" alt="">
-			<h3 id="ingredientsHeading"></h3>
-			<ul><span></span></ul>
-			<h3 id="directionsHeading"></h3>
-			<p id="directions"></p>  
+		<main class="container">
+			<div class="text-center mb-4">
+				<section class="mx-auto my-4">			
+					<header>
+						<img class="mb-1" src="img/UP.png" alt="kickass UP logo" width="120" height="120">
+						<h1>Uncle Peter Presents: Let's Have a Drink</h1>	
+					</header>
+					
+					<section id="searchArea" style="display: block">
+						<h2 class="text-muted">Search by cocktail name</h2>
+						<div><input type="text" name="" value="" id="inputTextName" placeholder="Enter cocktail name" size="35"></div>
+						<div class="my-3"><button type="button" name="button" class="btn btn-danger" id="inputNameButton">Search by cocktail name</button></div>
+						
+						<h2 class="text-muted">Or search by ingredient</h2>
+						<div>
+							<input  list="datalistOptions" id="inputTextIngredient" placeholder="Enter ingredient (whiskey, gin, red wine, etc.)" size="35">
+							<datalist id="datalistOptions">
+								<span id="datalistItems"></span>
+							  </datalist>
+						</div>
+						<div class="my-3"><button type="button" name="button" class="btn btn-danger" id="inputIngredientButton">Search by ingredient</button></div>
+							
+						<h3 id="choicesHeading"></h3>
+							
+						<div class="row justify-content-md-center">
+							<div class="col-md-5">
+								<span id="drinkChoices"></span>
+							</div>
+						</div>
+					</section>
+					
+					<section id="recipeArea">
+						<h2 id="cocktailName"></h2>
+						<img id="cocktailPic" src="" alt="" class="img-fluid">
+						<h3 id="ingredientsHeading"></h3>
+						<ul><span id="ingredients"></span></ul>
+						<h3 id="directionsHeading"></h3>
+						<p id="directions"></p>
+						<div id="newSearch"></div> 
+					</section>
+				</section>
+			</div>
 		</main>
 		<footer>
 		</footer>
 
+    	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>   
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>
