@@ -142,13 +142,11 @@ function displayDrink(currentDrinkID){
             document.querySelector('#directionsHeading').innerText = 'Directions'
             document.querySelector('#directions').innerText = currentDrink.strInstructions
             document.querySelector('#newSearch').innerHTML = 
+            //Also add two buttons, to return to the previous search or to start a new search
             (`<div class="my-3">
                 <button type="button" name="button" class="btn btn-danger" id="previousSearch">Previous Search</button>
-                <a href=""><button type="button" name="button" class="btn btn-danger" id="inputButton">New Search</button></a>
+                <a href=""><button type="button" name="button" class="btn btn-danger" id="newSearch">New Search</button></a>
             </div>`)
-            
-            
-            //******PICK UP HERE, call new function on PREVIOUS SEARCH option
             document.querySelector('#previousSearch').addEventListener('click', toggleRecipeArea)     
         })
         .catch(err => {
