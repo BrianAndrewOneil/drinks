@@ -3,7 +3,7 @@ let fullIngredientsList=[]
 fetch(`https://www.thecocktaildb.com/api/json/v2/9973533/list.php?i=list`)
     .then(res => res.json()) // parse response as JSON
     .then(ingredients => {
-        fullIngredientsList = ingredients.drinks.map(a => a.strIngredient1).sort()
+        fullIngredientsList = ingredients.drinks.map(a => a.strIngredient1.toLowerCase()).sort()
         console.log(fullIngredientsList)
         for(i of fullIngredientsList){
             document.querySelector('#datalistItems').innerHTML += (`<option value="${i}">`)
