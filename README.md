@@ -1,8 +1,8 @@
 # drinks
 
-An app to look up ingredients and recipies for cocktails.
+An app to peruse hundreds of cocktail recipes, searchable by drink name or that special ingredient.
 
-**Link to project:** https://brianandrewoneil.github.io/drinks/
+**Link to project:** https://drinks-by-up.netlify.app/
 
 <img alt="image of web app" src="https://brianandrewoneil.github.io/drinks/img/drinks.png" width=50%>
 
